@@ -1,5 +1,4 @@
 package dataCenter;
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -7,21 +6,15 @@ import javax.swing.JPanel;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JCheckBox;
-import javax.swing.JTextArea;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
-import com.jgoodies.forms.layout.FormLayout;
-import com.jgoodies.forms.layout.ColumnSpec;
-import com.jgoodies.forms.layout.RowSpec;
-import com.jgoodies.forms.factories.FormFactory;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 
-public class AuthenticationForm extends JFrame {
+public class Authentication extends JFrame {
 
 	/**
 	 * 
@@ -54,7 +47,7 @@ public class AuthenticationForm extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					AuthenticationForm frame = new AuthenticationForm();
+					Authentication frame = new Authentication();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -66,7 +59,7 @@ public class AuthenticationForm extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public AuthenticationForm() {
+	public Authentication() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
